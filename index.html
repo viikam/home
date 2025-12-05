@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Services</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    </head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Portail de Services</h1>
+            <p class="subtitle">Accédez à vos applications en un clic</p>
+        </header>
+        
+        <main class="grid-container">
+            <a href="https://cloud.xunil.app" class="card" title="Accéder à Nextcloud">
+                <div class="card-icon-container">
+                    <i class="fas fa-cloud card-icon"></i>
+                </div>
+                <h2>Nextcloud</h2>
+                <p>Stockage cloud et partage de fichiers sécurisé</p>
+                <div class="card-badge">Cloud</div>
+            </a>
+            
+            <a href="https://sae.xunil.app" class="card" title="Accéder au Site 1">
+                <div class="card-icon-container">
+                    <i class="fas fa-globe card-icon"></i>
+                </div>
+                <h2>Site SAE</h2>
+                <p>Site web pour la saé</p>
+                <div class="card-badge">Web</div>
+            </a>
+            
+            <a href="https://stats.xunil.app/d/rYdddlPWk/node-exporter-full?orgId=1&from=now-24h&to=now&timezone=browser&var-ds_prometheus=cf4imsqt3u2o0e&var-job=node_exporter&var-nodename=vikam-vm&var-node=casaos-host-server&refresh=1m" class="card" title="Accéder au Site 2">
+                <div class="card-icon-container">
+                    <i class="fas fa-rocket card-icon"></i>
+                </div>
+                <h2>Statistiques de la vm </h2>
+                <p>Outil de visualisation des consommations des ressources</p>
+                <div class="card-badge">App</div>
+            </a>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="github-link">
+                    <a href="https://github.com/viikam" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>viikam</span>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <span>© 2025 Portail Services</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Animation au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            // Effet de hover amélioré
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
