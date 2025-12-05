@@ -1,2 +1,2 @@
 # home
-small project of hub to my web service 
+it's a small project of a hub hebergate on my server home.xunil.app where i can manage some web services on my server  
